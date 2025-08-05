@@ -105,7 +105,7 @@ def main():
         val_features = val_features.type(torch.FloatTensor).squeeze().to(device)
         test_features = test_features.type(torch.FloatTensor).squeeze().to(device)
         clip_prototypes = clip_prototypes.type(torch.FloatTensor).squeeze().to(device)
-        from baselines_v.runner import run_transductive_finetuning
+        from baseline_v.runner import run_transductive_finetuning
         run_transductive_finetuning(cfg, shot_features, shot_labels, val_features, val_labels, test_features,
                                     test_labels,
                                     clip_prototypes)
@@ -115,7 +115,7 @@ def main():
         val_features = val_features.type(torch.FloatTensor).squeeze().to(device)
         test_features = test_features.type(torch.FloatTensor).squeeze().to(device)
         clip_prototypes = clip_prototypes.type(torch.FloatTensor).squeeze().to(device)
-        from baselines_v.runner import run_bdcspn
+        from baseline_v.runner import run_bdcspn
         run_bdcspn(cfg, shot_features, shot_labels, val_features, val_labels, test_features, test_labels,
                    clip_prototypes)
     elif args.method == 'laplacian_shot':
@@ -124,7 +124,7 @@ def main():
         val_features = val_features.type(torch.FloatTensor).squeeze().to(device)
         test_features = test_features.type(torch.FloatTensor).squeeze().to(device)
         clip_prototypes = clip_prototypes.type(torch.FloatTensor).squeeze().to(device)
-        from baselines_v.runner import run_laplacian_shot
+        from baseline_v.runner import run_laplacian_shot
         run_laplacian_shot(cfg, shot_features, shot_labels, val_features, val_labels, test_features, test_labels,
                            clip_prototypes)
     elif args.method == 'ptmap':
@@ -133,7 +133,7 @@ def main():
         val_features = val_features.type(torch.FloatTensor).squeeze().to(device)
         test_features = test_features.type(torch.FloatTensor).squeeze().to(device)
         clip_prototypes = clip_prototypes.type(torch.FloatTensor).squeeze().to(device)
-        from baselines_v.runner import run_pt_map
+        from baseline_v.runner import run_pt_map
         run_pt_map(cfg, shot_features, shot_labels, val_features, val_labels, test_features, test_labels,
                    clip_prototypes)
     elif args.method == 'tim':
@@ -142,7 +142,7 @@ def main():
         val_features = val_features.type(torch.FloatTensor).squeeze().to(device)
         test_features = test_features.type(torch.FloatTensor).squeeze().to(device)
         clip_prototypes = clip_prototypes.type(torch.FloatTensor).squeeze().to(device)
-        from baselines_v.runner import run_tim
+        from baseline_v.runner import run_tim
         run_tim(cfg, shot_features, shot_labels, val_features, val_labels, test_features, test_labels,
                 clip_prototypes, version='adm')
 
