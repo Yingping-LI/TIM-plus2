@@ -73,7 +73,7 @@ You can select among `{transductive_finetuning; bdcspn; laplacian_shot; ptmap; t
 
 ### Inductive Linear-Probe Baselines
 
-To run the inductive linear probe baselines, use (and modify) the following command:
+To run the inductive linear probe(LP) baselines, use (and modify) the following command:
 
 ```bash
 bash ./scripts/inductive_baselines_lp_family.sh /path/to/datasets/folder LinearProbe 4
@@ -87,7 +87,7 @@ To run the TransCLIP, use (and modify) the following command:
 bash ./scripts/transductive_baselines.sh /path/to/datasets/folder vit_b16 TransCLIP 4
 ```
 
-To run the LinearProbe_P2, use (and modify) the following command:
+To run the LP++, use (and modify) the following command:
 
 ```bash
 bash ./scripts/inductive_baselines_lp_family.sh /path/to/datasets/folder LinearProbe_P2 4
