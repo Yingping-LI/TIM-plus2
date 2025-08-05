@@ -3,11 +3,18 @@
 ## Introduction
 TIM++ is a enhanced transductive approach built on the standard TIM framework, adapting to few-shot vision-language scenarios by integrating textual information. Specifically, our method introduces a Kullback-Leibler(KL) divergence-based regularization term that encourages the model's predictions to align with CLIP's zero-shot outputs. Additionally, we design an improved prototype initialization strategy guided by CLIP's semantics knowledge. Surprisingly, TIM++ consistently outperformms the standard TIM and surpasses other existing SOTA methods across 11 benchmerk datasets.
 
-<p align="center">
-  <img src="figures/bar_plot.jpg" alt="Bar plot" width="800" height="500">
-  <br>
-  <em>Figure 1: TIM++ significantly outperforms standard TIM. Average Top-1 accuracy is reported across 11 public datasets under different shot settings.</em>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <img src="figures/bar_plot.jpg" alt="Bar plot" width="481"/><br>
+      <em>Figure 1a: TIM++ significantly outperforms standard TIM. Average Top-1 accuracy is reported across 11 public datasets under different shot settings.</em>
+    </td>
+    <td align="center">
+      <img src="figures/Average_accuracy.jpg" alt="Line plot" width="362"/><br>
+      <em>Figure 1b: TIM++ achieves superior performance over existing few-shot learning methods across 11 public datasets under different shot settings.</em>
+    </td>
+  </tr>
+</table>
 
 ## Table of Contents
 
