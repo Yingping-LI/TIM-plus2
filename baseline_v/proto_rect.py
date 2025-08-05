@@ -6,7 +6,7 @@ from collections import OrderedDict
 import torch
 from torch import Tensor
 import torch.nn as nn
-from baselines_v.few_shot_classifier import FewShotClassifier
+from baseline_v.few_shot_classifier import FewShotClassifier
 
 class BDCSPN(FewShotClassifier):
     """

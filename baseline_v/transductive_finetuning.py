@@ -1,8 +1,8 @@
 import torch
 from torch import Tensor, nn
 
-from baselines_v.finetune import Finetune
-from baselines_v.utils import entropy
+from baseline_v.finetune import Finetune
+from baseline_v.utils import entropy
 
 
 class TransductiveFinetuning(Finetune):

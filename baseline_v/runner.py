@@ -8,7 +8,7 @@ def cls_acc(output, target, topk=1):
     acc = 100 * acc / target.shape[0]
     return acc
 def run_bdcspn(cfg, cache_keys, cache_values, val_features, val_labels, test_features, test_labels, clip_weights):
-    import baselines_v.proto_rect as lib
+    import baseline_v.proto_rect as lib
 
     kwargs = {"feature_normalization": 2}  # default 2
     device = clip_weights.device
@@ -61,7 +61,7 @@ def run_bdcspn(cfg, cache_keys, cache_values, val_features, val_labels, test_fea
 
 def run_tim(cfg, cache_keys, cache_values, val_features, val_labels, test_features, test_labels, clip_weights, version="adm"):
     # clip_weights can be ignored
-    import baselines_v.tim as lib
+    import baseline_v.tim as lib
 
     kwargs_adm = {
       "fine_tuning_steps": 150,
@@ -150,7 +150,7 @@ def run_tim(cfg, cache_keys, cache_values, val_features, val_labels, test_featur
 
 def run_laplacian_shot(cfg, cache_keys, cache_values, val_features, val_labels, test_features, test_labels, clip_weights):
     # clip_weights can be ignored
-    import baselines_v.laplacian_shot as lib
+    import baseline_v.laplacian_shot as lib
 
     kwargs = {
         "inference_steps": 20,
@@ -210,7 +210,7 @@ def run_laplacian_shot(cfg, cache_keys, cache_values, val_features, val_labels, 
 
 def run_transductive_finetuning(cfg, cache_keys, cache_values, val_features, val_labels, test_features, test_labels, clip_weights):
     # clip_weights can be ignored
-    import baselines_v.transductive_finetuning as lib
+    import baseline_v.transductive_finetuning as lib
 
     kwargs = {
         "fine_tuning_steps": 25,
@@ -270,7 +270,7 @@ def run_transductive_finetuning(cfg, cache_keys, cache_values, val_features, val
 
 def run_pt_map(cfg, cache_keys, cache_values, val_features, val_labels, test_features, test_labels, clip_weights):
     # clip_weights can be ignored
-    import baselines_v.pt_map as lib
+    import baseline_v.pt_map as lib
 
     kwargs = {
         "fine_tuning_steps": 10,

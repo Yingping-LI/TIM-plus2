@@ -4,7 +4,7 @@ from typing import Optional
 import torch
 from torch import Tensor, nn
 
-from baselines_v.utils import compute_prototypes
+from baseline_v.utils import compute_prototypes
 
 
 class FewShotClassifier(nn.Module):

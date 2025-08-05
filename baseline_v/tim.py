@@ -1,9 +1,9 @@
 import torch
 from torch import Tensor, nn
 
-from baselines_v.few_shot_classifier import FewShotClassifier
+from baseline_v.few_shot_classifier import FewShotClassifier
 
-from baselines_v.tim_utils import get_one_hot
+from baseline_v.tim_utils import get_one_hot
 class TIM(FewShotClassifier):
     """
     Malik Boudiaf, Ziko Imtiaz Masud, Jérôme Rony, José Dolz, Pablo Piantanida, Ismail Ben Ayed.

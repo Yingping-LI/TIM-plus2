@@ -1,7 +1,7 @@
 import torch
 from torch import Tensor, nn
 
-from baselines_v.few_shot_classifier import FewShotClassifier
+from baseline_v.few_shot_classifier import FewShotClassifier
 
 
 class Finetune(FewShotClassifier):

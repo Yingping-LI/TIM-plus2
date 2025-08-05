@@ -1,8 +1,8 @@
 import torch
 from torch import Tensor
 
-from baselines_v.proto_rect import BDCSPN
-from baselines_v.utils import k_nearest_neighbours
+from baseline_v.proto_rect import BDCSPN
+from baseline_v.utils import k_nearest_neighbours
 
 """
 Source:https://github.com/sicara/easy-few-shot-learning/blob/master/easyfsl/methods/laplacian_shot.py
