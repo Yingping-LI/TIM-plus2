@@ -6,15 +6,18 @@ TIM++ is a enhanced transductive approach built on the standard TIM framework, a
 <table>
   <tr>
     <td align="center">
-      <img src="figures/bar_plot.jpg" alt="Bar plot" width="400"/><br>
+      <br>
+      <img src="figures/bar_plot.jpg" alt="Bar plot" width="500" height="380"/><br><br>
       <em>Figure 1a: TIM++ significantly outperforms standard TIM. Average Top-1 accuracy is reported across 11 public datasets under different shot settings.</em>
     </td>
     <td align="center">
-      <img src="figures/Average_accuracy.jpg" alt="Line plot" width="400"/><br>
+      <img src="figures/Average_accuracy.jpg" alt="Line plot" width="450" height="380"/><br>
       <em>Figure 1b: TIM++ achieves superior performance over existing few-shot learning methods across 11 public datasets under different shot settings.</em>
     </td>
   </tr>
 </table>
+
+
 
 ## Table of Contents
 
